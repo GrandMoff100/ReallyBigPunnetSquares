@@ -4,11 +4,11 @@
 
 Recently I took up a fascination with larger Punnet Squares (see the background section) and decided to write a module to do them for me.
 In doing so I realized how me, am just a victim in a very large math game called genetics.
-Each of genes is controlled by a probability and when given my human parents who have anywhere between 20,000 to 25,000 genes.
-Meaning that there are two to the power of twice the amount of genes that they have amount of options for my combination of genes.
+Each combination of genes is controlled by a probability and when given my human parents who have anywhere between 20,000 to 25,000 genes.
+In practice there ends up being two to the power of twice the amount of genes that they possess, amount of options for my combination of genes.
 Some options are mostly duplicates which is why I do not have freckles just like both of my parents.
 But others are heterozygous genes meaning that my parents carried a recessive and dominant version of a gene but I ended up with the ressive version from both my parents.
-Meaning that I would show a trait that neither of my parents do like a dark haired child from two blonde parents.
+Making it so that I would show a trait that neither of my parents do, like a dark haired child from two blonde parents.
 
 In returning to code I wrote for this repository I wrote classes to represent genotypes and you can cross them by using the multiplier operator `*`.
 

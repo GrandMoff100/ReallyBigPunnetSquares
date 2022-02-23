@@ -28,7 +28,7 @@ class Genotype:
                 temp = ""
 
     def crossing_combos(self, *args: Tuple[str]) -> Generator[str, None, None]:
-        """Generates the allele combinations for each column or row of the Punnet square from a genotype."""
+        """Generates the allele combinations for each column or row of the Punnett Square from a genotype."""
         if len(args) > 0:
             gene, *args = args
             for allele in gene:
@@ -42,7 +42,7 @@ class Genotype:
         return Probability((*map(Genotype, self.cross_options(other)),))
 
     def cross_options(self, other: "Genotype") -> Generator[str, None, None]:
-        """Crosses each allele combination with each other one from the other genotype just like Punnet Square."""
+        """Crosses each allele combination with each other one from the other genotype just like Punnett Square."""
         for y_combo in self.crossing_combos(*self.pairs):
             for x_combo in self.crossing_combos(*other.pairs):
                 yield self.cross_alleles(x_combo, y_combo)
@@ -50,7 +50,7 @@ class Genotype:
     def cross_alleles(self, x_allele: str, y_allele: str) -> str:
         """
         Crosses an allele combination with another one from a mate.
-        Happens in each box of the Punnet Square.
+        Happens in each box of the Punnett Square.
         """
         if len(x_allele) != len(y_allele):
             raise ValueError(f"Both allele combination must be of the same length. Got {x_allele} and {y_allele}")

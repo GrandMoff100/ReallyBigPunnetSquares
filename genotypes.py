@@ -83,7 +83,7 @@ class Probability:
         return dict(table)
 
 
-if __name__ == "__main__"
+if __name__ == "__main__":
     a = Genotype("BbCcDdMmNn")
     b = Genotype("BbCcddMmNn")
     
